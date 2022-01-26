@@ -1,3 +1,6 @@
+Note: Enable you text editor's Word wrap feature if available.
+
+
 Constructing truth table of n variables tips:
 
 lay out the "standalone" statement variables as follows. What I mean by "standalone" is that it's just the letter itself. No symbols.
@@ -26,6 +29,8 @@ now, raise 2 to each label above the variables. The number you get from raising 
    F		  T			F
    F		  F			T
    F		  F			F
+   
+As you can see the first column shifted from T to F after 4 T's. Then for the next column it shifted from T to F after (2 ^ "label") for that column, and so on.
    
    
 Note: the number of rows is 2^n, where n is the number of statement variables. This is the general formula for truth table.
