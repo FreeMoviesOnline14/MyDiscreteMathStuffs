@@ -1,0 +1,34 @@
+Constructing truth table of n variables tips:
+
+lay out the "standalone" statement variables as follows. What I mean by "standalone" is that it's just the letter itself. No symbols.
+
+p q r
+
+now, above each statement variable, label it in descending order starting (n-1) as follow:
+
+n = 3... so... (n-1) = 2;
+
+"label" 	---> 2 1 0
+"variables"	---> p q r
+
+now, raise 2 to each label above the variables. The number you get from raising (2 ^ "label") will serve as the counter for creating an alternating patterns of T's and F's. This will be your algorithm for constructing the alternating pattern of T's and F's as follows:
+
+
+2^2 = 4		2^1 = 2		2^0 = 1
+
+   p		  q			r
+    
+   T		  T			T
+   T		  T			F
+   T		  F			T
+   T		  F			F
+   F		  T			T
+   F		  T			F
+   F		  F			T
+   F		  F			F
+   
+   
+Note: the number of rows is 2^n, where n is the number of statement variables. This is the general formula for truth table.
+	  the total number of T's and F's is ((2^n) * n). 
+	  the number of columns depends on the given problem.
+   
